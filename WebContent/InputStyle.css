@@ -1,0 +1,66 @@
+@CHARSET "ISO-8859-1";
+.heading
+{
+	padding:0.5px;
+	justify-content: space-between;
+}
+body 
+{
+	background-image:url('images/circle.png');
+	background-repeat:no-repeat;
+	background-size:100% 130%;
+}
+h2
+{
+	color:#8B4513;   
+	margin-left:0.1%;
+	font-size : 50px;
+	font-family:Georgia;
+}
+body .box
+{
+	margin:15px;
+	margin-left:30%;
+	width:40%;
+	height:50%;
+	padding:5px;
+	text-align:center;
+}
+body .box h4
+{
+	color:#FC4C4E;
+	font-family:Georgia;
+	margin-bottom:5%;
+	font-size:22px;
+}
+body .box input
+{
+margin-left:65px;
+margin-top:5px;
+font-size:15px;
+border-style:solid;
+background-color:#FFABAB;
+border:none;
+padding:10px;
+border-radius:0%;
+}
+body .box input:active
+{
+	font-size: 15px;
+	border-style:solid;
+	border:none;
+	}
+
+.box submit
+{
+	background-color:cyan;
+	padding:4px;
+	font-size: 15px;
+	margin:8px;
+}
+.box submit:hover
+{
+	color:cyan;
+}
+
+
