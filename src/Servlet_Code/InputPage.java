@@ -21,10 +21,24 @@ public class InputPage extends HttpServlet {
 		
 		String first_name = request.getParameter("first_name");
 		String second_name = request.getParameter("second_name");
+		String firstname_dup = "";
+		for(int i=0;i<first_name.length();i++) {
+			if(first_name.charAt(i)!=' ') {
+				firstname_dup += String.valueOf(first_name.charAt(i));
+			}
+		}
+		first_name = firstname_dup;
+		
+		String secondname_dup = "";
+		for(int i=0;i<second_name.length();i++) {
+			if(second_name.charAt(i)!=' ') {
+				secondname_dup += String.valueOf(second_name.charAt(i));
+			}
+		}
+		second_name = secondname_dup;
 		int number= getNumber(first_name,second_name); 
 		String relation = getRelation(number);
 		int percentage = getPercent(first_name, second_name, relation);
-		
 		request.setAttribute("relation", relation);
 		request.setAttribute("percentage", percentage);
 		
