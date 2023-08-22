@@ -18,7 +18,6 @@ public class InputPage extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html");
 		PrintWriter out =response.getWriter();
-		
 		String first_name = request.getParameter("first_name");
 		String second_name = request.getParameter("second_name");
 		String firstname_dup = "";
@@ -36,11 +35,19 @@ public class InputPage extends HttpServlet {
 			}
 		}
 		second_name = secondname_dup;
+		
 		int number= getNumber(first_name,second_name); 
+		if(number <= 0) {
+			request.setAttribute("relation", "yourself ");
+			request.setAttribute("percentage", 110);
+		}
+		else {
 		String relation = getRelation(number);
 		int percentage = getPercent(first_name, second_name, relation);
+		
 		request.setAttribute("relation", relation);
 		request.setAttribute("percentage", percentage);
+		}
 		
 		request.getRequestDispatcher("OutputPage.jsp").forward(request, response);
 	}
