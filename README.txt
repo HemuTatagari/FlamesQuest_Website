@@ -32,8 +32,4 @@ FlamesQuest is a fun and simple web application that helps you discover the rela
 
 While FlamesQuest is a fun and straightforward project, contributions are always welcome. If you have ideas for improvements or enhancements, please feel free to share them with us.
 
-**License:**
-
-FlamesQuest is an open-source project released under the [insert license here]. You can find more details in the license file.
-
 **Enjoy discovering unique relationships with FlamesQuest!**
